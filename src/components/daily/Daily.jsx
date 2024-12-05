@@ -19,7 +19,7 @@ const Daily = () => {
               onClick={()=>{setActive(false)}}
             >Отменить</button>
         </div>
-        <div className={`${s.daily__content} ${active? s.active : ''}`}>
+        <div className={s.daily__content}>
           {
             daily.map((elem, index)=>(
               <DailyItem key={elem.dt} info={elem} index={index}/>
